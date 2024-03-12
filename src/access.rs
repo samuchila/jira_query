@@ -23,7 +23,7 @@ use crate::issue_model::{Issue, JqlResults};
 
 // The prefix of every subsequent REST request.
 // This string comes directly after the host in the URL.
-const REST_PREFIX: &str = "rest/api/2";
+const REST_PREFIX: &str = "rest/api/3";
 
 /// Configuration and credentials to access a Jira instance.
 pub struct JiraInstance {
