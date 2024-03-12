@@ -243,7 +243,7 @@ impl JiraInstance {
         start_at: u32,
     ) -> Result<Vec<Issue>, JiraQueryError> {
         let url = self.path(method, start_at);
-
+        log::debug!("{}",&url);
         let results = self
             .authenticated_get(&url)
             .await?
